@@ -1,0 +1,147 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name WhatIsAroundARCore
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import ARKit
+import AVFoundation
+import CoreLocation
+import CryptoKit
+import Foundation
+import ModelIO
+import SceneKit.ModelIO
+import SceneKit
+import Security
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import simd
+final public class ArCoreClient {
+  public static let version: Swift.String
+  final public var onEvent: (([Swift.String : Any]) -> Swift.Void)? {
+    get
+    set
+  }
+  public init()
+  final public func initialize(licenseKey: Swift.String, completion: @escaping (Swift.Result<[Swift.String : Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
+  final public func info() -> [Swift.String : Any]
+  final public func makeView(frame: CoreFoundation.CGRect) -> WhatIsAroundARCore.ArCoreView
+  final public func checkAvailability() -> Swift.String
+  final public var hasPermissions: Swift.Bool {
+    get
+  }
+  final public func requestPermissions(_ completion: @escaping (Swift.Bool) -> Swift.Void)
+  final public func openAppSettings()
+  final public func configure(apiKey: Swift.String?, authMode: Swift.String, cloudAnchors: Swift.Bool, markerScale: Swift.Float?) -> WhatIsAroundARCore.ArCoreError?
+  final public func setAuthToken(_ token: Swift.String) -> WhatIsAroundARCore.ArCoreError?
+  final public var isSessionRunning: Swift.Bool {
+    get
+  }
+  final public func placeAnchor(_ r: WhatIsAroundARCore.ArAnchorRequest) -> Swift.Result<Swift.String, WhatIsAroundARCore.ArCoreError>
+  final public func placeFlight(_ r: WhatIsAroundARCore.ArFlightRequest) -> Swift.Result<Swift.String, WhatIsAroundARCore.ArCoreError>
+  final public func startSurfacePlacement(objPath: Swift.String?, texturePath: Swift.String?, scale: Swift.Float?) -> WhatIsAroundARCore.ArCoreError?
+  final public func stopSurfacePlacement()
+  final public func hostCloudAnchor(id: Swift.String, ttlDays: Swift.Int, completion: @escaping (Swift.Result<Swift.String?, WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
+  final public func resolveCloudAnchor(_ r: WhatIsAroundARCore.ArCloudResolveRequest) -> WhatIsAroundARCore.ArCoreError?
+  final public func removeAnchor(id: Swift.String) -> Swift.Bool
+  final public func clearAnchors()
+  final public var anchorIds: [Swift.String] {
+    get
+  }
+  final public func setEndUserToken(_ token: Swift.String?)
+  final public func fetchActiveAirdrops(_ completion: @escaping (Swift.Result<[Swift.String : Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
+  final public func reportCrateLanded(airdropId: Swift.String, _ completion: @escaping (Swift.Result<[Swift.String : Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
+  final public func fetchLandmarks(_ completion: @escaping (Swift.Result<[Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
+  final public func listCloudAnchors(latitude: Swift.Double?, longitude: Swift.Double?, radiusM: Swift.Int?, anchorIds: [Swift.String]?, includeExpired: Swift.Bool, _ completion: @escaping (Swift.Result<[Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
+  final public func saveCloudAnchor(_ fields: [Swift.String : Any?], _ completion: @escaping (Swift.Result<[Swift.String : Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
+  final public func updateCloudAnchor(id: Swift.Int, _ fields: [Swift.String : Any?], _ completion: @escaping (Swift.Result<[Swift.String : Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
+  final public func deleteCloudAnchor(id: Swift.Int, _ completion: @escaping (Swift.Result<[Swift.String : Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
+  final public func fetchArToken(deviceId: Swift.String?, _ completion: @escaping (Swift.Result<[Swift.String : Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class ArCoreView {
+  final public var view: UIKit.UIView {
+    get
+  }
+  @objc deinit
+}
+public struct ArCoreError : Swift.Error {
+  public let code: Swift.String
+  public let message: Swift.String
+  public init(code: Swift.String, message: Swift.String)
+}
+public enum ArErrorCodes {
+  public static let badArgs: Swift.String
+  public static let notInitialized: Swift.String
+  public static let licenseKeyMissing: Swift.String
+  public static let licenseRejected: Swift.String
+  public static let licenseInvalid: Swift.String
+  public static let licenseExpired: Swift.String
+  public static let appMismatch: Swift.String
+  public static let network: Swift.String
+  public static let featureDisabled: Swift.String
+  public static let notFound: Swift.String
+  public static let conflict: Swift.String
+  public static let rateLimited: Swift.String
+  public static let userInvalid: Swift.String
+  public static let apiError: Swift.String
+}
+public enum ArFeatures {
+  public static let geospatial: Swift.String
+  public static let cloudAnchors: Swift.String
+  public static let flights: Swift.String
+  public static let surfacePlacement: Swift.String
+}
+public struct ArAnchorRequest {
+  public var id: Swift.String
+  public var latitude: Swift.Double
+  public var longitude: Swift.Double
+  public var altitudeMode: Swift.String
+  public var heightAboveSurface: Swift.Double
+  public var altitude: Swift.Double?
+  public var altitudeOffset: Swift.Double
+  public var quaternion: [Swift.Float]
+  public var scale: Swift.Float?
+  public var objPath: Swift.String?
+  public var texturePath: Swift.String?
+  public var animation: Swift.String
+  public var nearScaleDistance: Swift.Float?
+  public var nearScaleFloor: Swift.Float
+  public var minScreenPx: Swift.Float?
+  public var grayDistance: Swift.Float?
+  public var tint: Swift.UInt32?
+  public init(id: Swift.String, latitude: Swift.Double, longitude: Swift.Double, altitudeMode: Swift.String = "wgs84", heightAboveSurface: Swift.Double = 0, altitude: Swift.Double? = nil, altitudeOffset: Swift.Double = -1, quaternion: [Swift.Float] = [0, 0, 0, 1], scale: Swift.Float? = nil, objPath: Swift.String? = nil, texturePath: Swift.String? = nil, animation: Swift.String = "none", nearScaleDistance: Swift.Float? = nil, nearScaleFloor: Swift.Float = 0.35, minScreenPx: Swift.Float? = nil, grayDistance: Swift.Float? = nil, tint: Swift.UInt32? = nil)
+}
+public struct ArFlightRequest {
+  public var id: Swift.String
+  public var fromLatitude: Swift.Double
+  public var fromLongitude: Swift.Double
+  public var toLatitude: Swift.Double
+  public var toLongitude: Swift.Double
+  public var gltfPath: Swift.String?
+  public var altitudeMode: Swift.String
+  public var altitude: Swift.Double
+  public var scale: Swift.Float
+  public var aircraftScale: Swift.Float
+  public var durationSeconds: Swift.Double?
+  public var dropCount: Swift.Int?
+  public var dropTargets: [[Swift.Double]]?
+  public var startOffsetSeconds: Swift.Double
+  public var loop: Swift.Bool
+  public init(id: Swift.String, fromLatitude: Swift.Double, fromLongitude: Swift.Double, toLatitude: Swift.Double, toLongitude: Swift.Double, gltfPath: Swift.String?, altitudeMode: Swift.String = "terrain", altitude: Swift.Double = 20, scale: Swift.Float = 1, aircraftScale: Swift.Float = 1, durationSeconds: Swift.Double? = nil, dropCount: Swift.Int? = nil, dropTargets: [[Swift.Double]]? = nil, startOffsetSeconds: Swift.Double = 0, loop: Swift.Bool = false)
+}
+public struct ArCloudResolveRequest {
+  public var id: Swift.String
+  public var cloudAnchorId: Swift.String
+  public var scale: Swift.Float?
+  public var objPath: Swift.String?
+  public var texturePath: Swift.String?
+  public var animation: Swift.String
+  public var nearScaleDistance: Swift.Float?
+  public var nearScaleFloor: Swift.Float
+  public var minScreenPx: Swift.Float?
+  public var grayDistance: Swift.Float?
+  public var heightOffset: Swift.Float
+  public init(id: Swift.String, cloudAnchorId: Swift.String, scale: Swift.Float? = nil, objPath: Swift.String? = nil, texturePath: Swift.String? = nil, animation: Swift.String = "none", nearScaleDistance: Swift.Float? = nil, nearScaleFloor: Swift.Float = 0.35, minScreenPx: Swift.Float? = nil, grayDistance: Swift.Float? = nil, heightOffset: Swift.Float = 0)
+}
