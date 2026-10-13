@@ -53,6 +53,7 @@ final public class ArCoreClient {
   final public func fetchActiveAirdrops(_ completion: @escaping (Swift.Result<[Swift.String : Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
   final public func reportCrateLanded(airdropId: Swift.String, _ completion: @escaping (Swift.Result<[Swift.String : Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
   final public func fetchLandmarks(_ completion: @escaping (Swift.Result<[Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
+  final public func createLandmark(_ fields: [Swift.String : Any?], _ completion: @escaping (Swift.Result<[Swift.String : Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
   final public func listCloudAnchors(latitude: Swift.Double?, longitude: Swift.Double?, radiusM: Swift.Int?, anchorIds: [Swift.String]?, includeExpired: Swift.Bool, _ completion: @escaping (Swift.Result<[Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
   final public func saveCloudAnchor(_ fields: [Swift.String : Any?], _ completion: @escaping (Swift.Result<[Swift.String : Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
   final public func updateCloudAnchor(id: Swift.Int, _ fields: [Swift.String : Any?], _ completion: @escaping (Swift.Result<[Swift.String : Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)

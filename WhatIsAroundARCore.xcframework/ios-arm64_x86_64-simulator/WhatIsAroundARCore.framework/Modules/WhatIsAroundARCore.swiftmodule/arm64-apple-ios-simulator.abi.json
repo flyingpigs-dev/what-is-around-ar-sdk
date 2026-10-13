@@ -1352,6 +1352,100 @@
           },
           {
             "kind": "Function",
+            "name": "createLandmark",
+            "printedName": "createLandmark(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any?]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[Swift.String : Any], WhatIsAroundARCore.ArCoreError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[Swift.String : Any], WhatIsAroundARCore.ArCoreError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ArCoreError",
+                        "printedName": "WhatIsAroundARCore.ArCoreError",
+                        "usr": "s:18WhatIsAroundARCore11ArCoreErrorV"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18WhatIsAroundARCore12ArCoreClientC14createLandmarkyySDySSypSgG_ys6ResultOySDySSypGAA0eF5ErrorVGctF",
+            "mangledName": "$s18WhatIsAroundARCore12ArCoreClientC14createLandmarkyySDySSypSgG_ys6ResultOySDySSypGAA0eF5ErrorVGctF",
+            "moduleName": "WhatIsAroundARCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "listCloudAnchors",
             "printedName": "listCloudAnchors(latitude:longitude:radiusM:anchorIds:includeExpired:_:)",
             "children": [
@@ -8033,7 +8127,7 @@
       "kind": "StringLiteral",
       "offset": 761,
       "length": 8,
-      "value": "\"0.16.1\""
+      "value": "\"0.17.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/what-is-around-ar-sdk-source\/what-is-around-ar-sdk-source\/native\/ios\/Sources\/WhatIsAroundARCore\/ArCoreClient.swift",
@@ -8073,21 +8167,21 @@
     {
       "filePath": "\/Users\/runner\/work\/what-is-around-ar-sdk-source\/what-is-around-ar-sdk-source\/native\/ios\/Sources\/WhatIsAroundARCore\/ArCoreClient.swift",
       "kind": "Dictionary",
-      "offset": 12921,
+      "offset": 13275,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/what-is-around-ar-sdk-source\/what-is-around-ar-sdk-source\/native\/ios\/Sources\/WhatIsAroundARCore\/ArCoreClient.swift",
       "kind": "Dictionary",
-      "offset": 13281,
+      "offset": 13635,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/what-is-around-ar-sdk-source\/what-is-around-ar-sdk-source\/native\/ios\/Sources\/WhatIsAroundARCore\/ArCoreClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 16250,
+      "offset": 16604,
       "length": 5,
       "value": "false"
     },
