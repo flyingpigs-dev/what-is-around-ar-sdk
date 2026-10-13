@@ -14,7 +14,7 @@ contact flyingpigs.dev@gmail.com.
 iOS apps add one line to `ios/Podfile`, inside `target 'Runner' do`:
 
 ```ruby
-pod 'WhatIsAroundARCore', :git => 'https://github.com/flyingpigs-dev/what-is-around-ar-sdk.git', :tag => '0.16.0'
+pod 'WhatIsAroundARCore', :git => 'https://github.com/flyingpigs-dev/what-is-around-ar-sdk.git', :tag => '0.16.1'
 ```
 
 Android needs nothing: the plugin's Gradle file adds the Maven repository above.

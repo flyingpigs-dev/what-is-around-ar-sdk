@@ -8033,7 +8033,7 @@
       "kind": "StringLiteral",
       "offset": 761,
       "length": 8,
-      "value": "\"0.16.0\""
+      "value": "\"0.16.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/what-is-around-ar-sdk-source\/what-is-around-ar-sdk-source\/native\/ios\/Sources\/WhatIsAroundARCore\/ArCoreClient.swift",

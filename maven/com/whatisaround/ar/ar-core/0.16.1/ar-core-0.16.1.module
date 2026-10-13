@@ -1,0 +1,125 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.whatisaround.ar",
+    "module": "ar-core",
+    "version": "0.16.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-common",
+          "version": {
+            "requires": "2.8.7"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ar-core-0.16.1.aar",
+          "url": "ar-core-0.16.1.aar",
+          "size": 766522,
+          "sha512": "eb69f6a0064262016997034e2fe0c02cf0884fc1a55a15b0b134a80a8aea845fdae1afae4c96702c0fe0836fc0cf0e0d341c65ced057163adbc33fd0e9247901",
+          "sha256": "07dde9815f0195ffa41ac5bc9c507c77759c1f24af8d64552da93f54afd09133",
+          "sha1": "fa0a14970f2362016d03bf5bd101b5f00ba3a526",
+          "md5": "0cb964727d4fb3349208ef9b5f793d62"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.ar",
+          "module": "core",
+          "version": {
+            "requires": "1.54.0"
+          }
+        },
+        {
+          "group": "de.javagl",
+          "module": "obj",
+          "version": {
+            "requires": "0.2.1"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-location",
+          "version": {
+            "requires": "21.3.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.13.1"
+          }
+        },
+        {
+          "group": "com.google.crypto.tink",
+          "module": "tink-android",
+          "version": {
+            "requires": "1.15.0"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-common",
+          "version": {
+            "requires": "2.8.7"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ar-core-0.16.1.aar",
+          "url": "ar-core-0.16.1.aar",
+          "size": 766522,
+          "sha512": "eb69f6a0064262016997034e2fe0c02cf0884fc1a55a15b0b134a80a8aea845fdae1afae4c96702c0fe0836fc0cf0e0d341c65ced057163adbc33fd0e9247901",
+          "sha256": "07dde9815f0195ffa41ac5bc9c507c77759c1f24af8d64552da93f54afd09133",
+          "sha1": "fa0a14970f2362016d03bf5bd101b5f00ba3a526",
+          "md5": "0cb964727d4fb3349208ef9b5f793d62"
+        }
+      ]
+    }
+  ]
+}
