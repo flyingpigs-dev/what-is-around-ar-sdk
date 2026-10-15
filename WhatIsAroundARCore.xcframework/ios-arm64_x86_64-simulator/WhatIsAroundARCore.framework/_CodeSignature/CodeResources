@@ -94,7 +94,7 @@
 		</data>
 		<key>Modules/WhatIsAroundARCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		B/AoXB8zD6sn4Ug3TCby3ee4IW8=
+		0qjqpk1Xog0sCCJZZHVsv99QJmo=
 		</data>
 		<key>Modules/WhatIsAroundARCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -110,11 +110,11 @@
 		</data>
 		<key>Modules/WhatIsAroundARCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GhhVe0y/8qbl76KThOfQR0yl+LA=
+		GlKrzfS+GFqGD+hfUrAGsawXOsQ=
 		</data>
 		<key>Modules/WhatIsAroundARCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		B/AoXB8zD6sn4Ug3TCby3ee4IW8=
+		0qjqpk1Xog0sCCJZZHVsv99QJmo=
 		</data>
 		<key>Modules/WhatIsAroundARCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Modules/WhatIsAroundARCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		V+CNDl5bxVcKy8wrzbiN6EivdS8=
+		jGVMKvXj94xlGps5lx6nqxR75h0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -298,7 +298,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1nqxeR97zsyHQ92yd35Es8gSbMLzYKJrbwGM2bHun/I=
+			4xVz08XRMuJ6AIKoDgZ5jb2pPA21ZGlebkLZwv+5mJY=
 			</data>
 		</dict>
 		<key>Modules/WhatIsAroundARCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -326,14 +326,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Pa+eZL0ZjQY58ezuFgOBBrSDde5Tttq72vJ3FbOM6Qc=
+			6ipXc9vFaCzAqpYsTO1hfVyxKUMK22JAuluH1S0NDfA=
 			</data>
 		</dict>
 		<key>Modules/WhatIsAroundARCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1nqxeR97zsyHQ92yd35Es8gSbMLzYKJrbwGM2bHun/I=
+			4xVz08XRMuJ6AIKoDgZ5jb2pPA21ZGlebkLZwv+5mJY=
 			</data>
 		</dict>
 		<key>Modules/WhatIsAroundARCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -361,7 +361,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+ALRfONLIbjE0NEFdpYKfr1nMrWTPOyvK9DNcO8HLXY=
+			d9IbysjZp2M5s+8WlO6WUTMmDAxXNuFzFePJuvL+hig=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
