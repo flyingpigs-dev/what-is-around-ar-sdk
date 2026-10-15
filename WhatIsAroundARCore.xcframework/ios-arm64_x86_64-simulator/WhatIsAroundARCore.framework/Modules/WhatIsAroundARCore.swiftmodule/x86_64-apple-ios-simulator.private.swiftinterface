@@ -25,6 +25,7 @@ final public class ArCoreClient {
   }
   public init()
   final public func initialize(licenseKey: Swift.String, completion: @escaping (Swift.Result<[Swift.String : Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
+  final public func initialize(licenseKey: Swift.String, serverURL: Swift.String?, completion: @escaping (Swift.Result<[Swift.String : Any], WhatIsAroundARCore.ArCoreError>) -> Swift.Void)
   final public func info() -> [Swift.String : Any]
   final public func makeView(frame: CoreFoundation.CGRect) -> WhatIsAroundARCore.ArCoreView
   final public func checkAvailability() -> Swift.String
